@@ -4,7 +4,10 @@ t=int(sys.stdin.readline())
 
 for i in range(t):
     h,w,n=map(int,sys.stdin.readline().split())
-    floor=n%h
+    if n%h == 0:
+        floor=h
+    else:
+        floor=n%h
     if n%h == 0:
         r_num=n//h
     else:
