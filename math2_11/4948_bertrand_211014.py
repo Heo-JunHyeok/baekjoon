@@ -10,7 +10,7 @@ for i in range(2,int(246912**0.5)+1):
 while True:
     n=int(sys.stdin.readline())
     if n==0: break
-    elif n==1: sys.stdout.write(str(1))
+    elif n==1: print(1)
     else:
         cnt=0
         for i in a[n+1:2*n]:
