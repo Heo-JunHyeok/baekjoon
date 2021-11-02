@@ -11,4 +11,4 @@ a.sort()
 for i in a:
     print(i)
 
-#timsort = 십입정렬+병합정렬
+#timsort = 삽입정렬+병합정렬
