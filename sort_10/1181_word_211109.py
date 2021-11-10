@@ -8,6 +8,6 @@ for _ in range(n):
 
 a=list(set(a))
 
-a.sort(key=lambda a:(len(a),a[1:]))
+a.sort(key=lambda x:(len(x),x))
 
 print('\n'.join(a))
