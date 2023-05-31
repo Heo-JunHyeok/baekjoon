@@ -3,7 +3,7 @@ import sys
 result = [0] * 4
 total = []
 
-f = open("input.txt", "rt")
+# f = open("input.txt", "rt")
 
 while 1:
     # s = f.readline().rstrip("\n")
@@ -25,7 +25,7 @@ while 1:
     total.append(result)
     result = [0] * 4
 
-f.close()
+# f.close()
 
 for i in total:
     print(*i)
