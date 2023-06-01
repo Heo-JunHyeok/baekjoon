@@ -19,3 +19,5 @@ while 1:
         if (number[i] == True) and (number[n - i] == True):
             print(f"{n} = {n-i} + {i}")
             break
+    else:
+        print('"Goldbach\'s conjecture is wrong."')
