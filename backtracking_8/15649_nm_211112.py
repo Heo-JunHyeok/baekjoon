@@ -1,18 +1,19 @@
 import sys
 
-n, m = map(int,sys.stdin.readline().split())
-a = []
+n, m = map(int, sys.stdin.readline().split())
 
-def nm():
-    if len(a) == m:
-        print(' '.join(map(str, a)))
+
+def nm(number, length, a):
+    if len(a) == length:
+        print(" ".join(map(str, a)))
         return
-    
-    for i in range(1, n+1):
+
+    for i in range(1, number + 1):
         if i in a:
             continue
         a.append(i)
-        nm()
+        nm(number, length, a)
         a.pop()
-        
-nm()
+
+
+nm(n, m, [])
